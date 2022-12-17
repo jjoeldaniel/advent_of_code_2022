@@ -8,10 +8,11 @@ for line in f:
         list.append(calories)
         calories = 0
         continue
-
-    calories += int(line)
+    else:
+        calories += int(line)
 
 f.close()
+
 list.sort(reverse=True)
 
 print(list[0])
