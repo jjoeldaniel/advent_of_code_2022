@@ -7,7 +7,6 @@ for line in f:
     if (line == '\n'):
         list.append(calories)
         calories = 0
-        continue
     else:
         calories += int(line)
 
