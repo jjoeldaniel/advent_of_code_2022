@@ -17,15 +17,19 @@ def isTie(opponent_choice, choice):
         return True
 
 def isWin(opponent_choice, choice):
+
     # Paper vs Rock = Win
     if choice == 'Y' and opponent_choice == 'A':
         return True
+
     # Scissors vs Paper = Win
     elif choice == 'Z' and opponent_choice == 'B':
         return True
+
     # Rock vs Scissors = Win
     elif choice == 'X' and opponent_choice == 'C':
         return True
+        
     # Else: Loss
     else:
         return False
