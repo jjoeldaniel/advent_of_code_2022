@@ -1,4 +1,4 @@
-f = open("day1\input.txt", "r")
+f = open("input.txt", "r")
 list = []
 calories = 0
 
