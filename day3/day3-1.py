@@ -7,8 +7,7 @@ def getPriority(char):
     else:
         return ord(char) - 38
 
-f = open("input.txt", "r")
-for line in f:
+for line in open("input.txt", "r"):
     first = line[slice(0, len(line)//2)]
     second = line[slice(len(line)//2, len(line))]
     
@@ -19,5 +18,4 @@ for line in f:
             sum += getPriority(char)
             break
 
-f.close()
 print(sum)

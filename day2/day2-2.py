@@ -56,8 +56,7 @@ def getShape(shape, choice):
 
         score += 0
 
-f = open("input.txt", "r")
-for line in f:
+for line in open("input.txt", "r"):
 
     # Take both inputs and strip
     shape = line.split(' ')
@@ -65,5 +64,4 @@ for line in f:
 
     getShape(shape[0], shape[1])
 
-f.close()
 print(score)

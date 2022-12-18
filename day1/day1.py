@@ -1,16 +1,13 @@
-f = open("input.txt", "r")
 list = []
 calories = 0
 
-for line in f:
+for line in open("input.txt", "r"):
 
     if (line == '\n'):
         list.append(calories)
         calories = 0
     else:
         calories += int(line)
-
-f.close()
 
 list.sort(reverse=True)
 

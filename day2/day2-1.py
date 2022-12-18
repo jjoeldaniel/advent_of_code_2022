@@ -34,9 +34,8 @@ def isWin(opponent_choice, choice):
     else:
         return False
 
-f = open("input.txt", "r")
 
-for line in f:
+for line in open("input.txt", "r"):
 
     # Take both inputs and strip
     shape = line.split(' ')
@@ -56,5 +55,4 @@ for line in f:
         score += 0
 
 
-f.close()
 print(score)

@@ -19,8 +19,7 @@ def getBadge(list):
         if char in list[1] and char in list[2]:
             return char
 
-f = open("input.txt", "r")
-for line in f:
+for line in open("input.txt", "r"):
 
     list.append(line)
     i += 1
@@ -30,5 +29,4 @@ for line in f:
         sum += getPriority(getBadge(list))
         list = []
 
-f.close()
 print(sum)
